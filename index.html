@@ -1,0 +1,115 @@
+<DOCTYPE html>
+	<html>
+		<head>
+			<meta charset='utf-8'>
+			<title>
+				Trivia Game
+			</title>
+			<!--******************************************************************
+			*****I watched youTube videos to get ideas  about how to proceed.    *
+			*****I modled it after a quiz.   
+			***** There are some things I could not fix:
+			*****    1.  I could not clear the counter without hitting the
+			*****        browser refresh;
+			*****    2.  Once the alert clears, the user can continue
+			*****    3.  Could not get my images to appear
+			**********************************************************************
+			-->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+			<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+			<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+			<link rel="stylesheet" href="https://fonts.google.com/specimen/Lato " />
+			
+			<!--JAVA SCRIPT FROM THIS POINT ON...  -->
+            <!--Link to the JQuery Library  -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			
+			<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+
+		</head>
+		<body>
+			<h1>Trivia Challenge</h1>
+			
+			<div id="panel"></div>
+			
+			<form id="trivia" name="trivia">
+				
+				<p> 1.  How many books are in the King James Version of the Bible?</p>
+				<input id="mc" type = "radio" name="question1" value="43">43<br>
+				<input id="mc" type = "radio" name="question1" value="54">54<br>
+				<input id="mc" type = "radio" name="question1" value="66">66<br> <!--answer -->
+				<input id="mc" type = "radio" name="question1" value="84">84<br /><br />
+				
+				<p> 2.  What was invented by Dr. Edward Land in 1947?  </p>
+				<input id="mc" type = "radio" name="question2" value="Super Glue">Super Glue<br>
+				<input id="mc" type = "radio" name="question2" value="Radial Tires">Radial Tires<br>
+				<input id="mc" type = "radio" name="question2" value="Diet Soft Drinks">Diet Soft Drinks<br>
+				<input id="mc" type = "radio" name="question2" value="Polaroid Cameras">Polaroid Cameras<br /><br />  <!--Answer -->
+				
+				<p> 3.  What Greek physician became known as the founder of Medicine? </p>
+				<input id="mc" type = "radio" name="question3" value="Hippocrates">Hippocrates<br> <!--Answer -->
+				<input id="mc" type = "radio" name="question3" value="Galen">Galen<br>
+				<input id="mc" type = "radio" name="question3" value="Achilles">Achilles<br>
+				<input id="mc" type = "radio" name="question3" value="Caesar">Caesar<br /><br />  
+				
+				<p> 4.  In which city can you see Michelangelo's David? </p>
+				<input id="mc" type = "radio" name="question4" value="Paris">Paris<br> 
+				<input id="mc" type = "radio" name="question4" value="Barcelona">Barcelona<br>
+				<input id="mc" type = "radio" name="question4" value="Florence">Florence<br> <!--Answer -->
+				<input id="mc" type = "radio" name="question4" value="Verona">Verona<br /><br /> 
+				
+				<p> 5.  Who invented the first major printing press? </p>
+				<input id="mc" type = "radio" name="question5" value="Gutenberg">Gutenberg<br> <!--Answer -->
+				<input id="mc" type = "radio" name="question5" value="Halley">Halley<br>
+				<input id="mc" type = "radio" name="question5" value="Edison">Edison<br> 
+				<input id="mc" type = "radio" name="question5" value="McPhearson">McPhearson<br /><br /> 
+				
+				<p> 6.  Whose album sold the most in a single day? </p>
+				<input id="mc" type = "radio" name="question6" value="Elvis Presley's">Elvis Presley's<br> <!--Answer -->
+				<input id="mc" type = "radio" name="question6" value="Madonna's">Madonna's<br>
+				<input id="mc" type = "radio" name="question6" value="The Beatles'">The Beatles'<br> 
+				<input id="mc" type = "radio" name="question6" value="Whitney Houston's">Whitney Houston's<br /><br /> 
+			
+				<p> 7.  What was the first Japanese car to be produced in the United States? </p>
+				<input id="mc" type = "radio" name="question7" value="Toyota Camry">Toyota Camry<br>
+				<input id="mc" type = "radio" name="question7" value="Nissan Maxima">Nissan Maxima<br>
+				<input id="mc" type = "radio" name="question7" value="Mazda Miata">Mazda Miata<br> 
+				<input id="mc" type = "radio" name="question7" value="Honda Accord">Honda Accord<br /><br /> <!--Answer -->
+				
+				<p> 8.  Ulysses S. Grant appears on the front of which denomination of US currency? </p>
+				<input id="mc" type = "radio" name="question8" value="$20.00 bill">$20.00 bill<br> 
+				<input id="mc" type = "radio" name="question8" value="$2.00 bill">$2.00 bill<br>
+				<input id="mc" type = "radio" name="question8" value="$100.00 bill">$100.00 bill<br> 
+				<input id="mc" type = "radio" name="question8" value="$50.00 bill">$50.00 bill<br /><br /> <!--Answer -->
+				
+				<p> 9.  How many time zones are there in the world? </p>
+				<input id="mc" type = "radio" name="question9" value="30">30<br> 
+				<input id="mc" type = "radio" name="question9" value="24">24<br>  <!--Answer -->
+				<input id="mc" type = "radio" name="question9" value="40">40<br> 
+				<input id="mc" type = "radio" name="question9" value="23">23<br /><br /> 
+				
+				<p> 10.  What is the chemical symbol for table salt? </p>
+				<input id="mc" type = "radio" name="question10" value="FL">FL<br> 
+				<input id="mc" type = "radio" name="question10" value="Zn">Zn<br>
+				<input id="mc" type = "radio" name="question10" value="NaCl">NaCl<br> <!--Answer -->
+				<input id="mc" type = "radio" name="question10" value="Lv">Lv<br /><br /> 
+				
+				<input id="button" type="button" value="finished" onclick="check();"> 
+				<input id="clrBtn" type="button" value="reset" onclick="resetForm();">
+				
+			</form>
+			
+			<div id = "after_submit" class="additionalText">
+			
+			<p id = "msgToUser"></p>
+			<p id = "picture"></p>
+			<p id = "number_correct"></p>
+			<p id = "number_incorrect"></p>
+			
+			</div>
+			
+			
+		</body>
+	</html>
